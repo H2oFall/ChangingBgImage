@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  <body>
+    <button onclick ="changebg()"> Random Background </button>
+    <script>
+      var bgs = ["3.jpeg","2.jpeg","download.png"];
+      function changebg(){
+       var rand = Math.floor(Math.random()*bgs.length);
+       document.body.style.background = "url("+bgs[rand]+")";
+       document.body.style.backgroundSize = "cover";
+      }
+    </script>
+  </body>
+</html>
